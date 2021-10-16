@@ -21,8 +21,7 @@ int *countingSort(int *A, int n, int *minMax) {
   for (int i = 0; i < range; i++) c[i] = 0;
   for (int i = 0; i < n; i++) c[A[i] - min]++;
   for (int i = 1; i < range; i++) c[i] += c[i - 1];
-  for (int i = n - 1; i >= 0; i--)  // stable version
-  {
+  for (int i = n - 1; i >= 0; i--) {
     b[c[A[i] - min] - 1] = A[i];
     c[A[i] - min]--;
   }
