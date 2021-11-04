@@ -25,7 +25,7 @@ class BinaryHeap : public PriorityQueue<T> {
 
   // Metodo per ottenere il figlio sinistro
   int left(int i) {
-    return i << 1;  // 2i
+    return i << 1;  // 2i 2*i
   }
 
   // Metodo per ottenere il figlio destro
